@@ -1,92 +1,4 @@
 <template>
-    <section id="sidebar">
-		<a href="#" class="brand">
-			<img src="../../assets/images/a1.png" alt="">
-			<span class="text">AdminHub</span>
-		</a>
-		<ul class="side-menu top">
-			<li class="active">
-				<a href="../index.html">
-					<i class='bx bxs-dashboard' ></i>
-					
-					<span class="text">Dashboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-user-pin'></i>
-					<span class="text">Usuarios</span>
-				</a>
-			</li>
-			<li>
-				<router-link to="/gestionPaciente" class="flex items-center">
-					<svg xmlns="http://www.w3.org/2000/svg" 
-					height="16" 
-					width="14" 
-					viewBox="0 0 448 512" 
-					class="mr-2">
-						<path
-							d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z" />
-					</svg>
-					<span style="margin-left: 8px;">Pacientes</span>
-				</router-link>
-			</li>
-			<li>
-				<a href="../../HTML/navegacion/gestionMedicos.html">
-					<i class='bx bxs-first-aid' ></i>
-					<span class="text">Medicos</span>
-				</a>
-			</li>
-			<li>
-				<a href="../../HTML/navegacion/gestionCitas.html">
-					<i class='bx bxs-calendar-event' ></i>
-					<span class="text">Citas</span>
-				</a>
-			</li>
-		</ul>
-		<ul class="side-menu">
-			<li>
-				<a href="#">
-					<i class='bx bxs-cog' ></i>
-					<span class="text">Settings</span>
-				</a>
-			</li>
-			<li>
-				<a href="#" class="logout">
-					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<!-- SIDEBAR -->
-
-
-
-	<!-- CONTENT -->
-	<section id="content">
-		<!-- NAVBAR -->
-		<nav>
-			<i class='bx bx-menu' ></i>
-			<form action="#">
-				<div class="form-input">
-					<input type="search" placeholder="Search...">
-					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
-				</div>
-			</form>
-			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
-			<a href="#" class="notification">
-				<i class='bx bxs-bell' ></i>
-				<span class="num">8</span>
-			</a>
-			<a href="#" class="profile">
-				<img src="../../assets/images/adm.png">
-			</a>
-		</nav>
-		<!-- NAVBAR -->
-
-		<!-- MAIN -->
 		<main>
 			<div class="head-title">
 				<div class="left">
@@ -145,7 +57,6 @@
 			</div>
 		</main>
 		<!-- MAIN -->
-	</section>
 </template>
 
 <script>

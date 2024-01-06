@@ -6,7 +6,7 @@
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<router-link to="/dashboardAdmin" class="flex items-center">
+				<router-link to="/" class="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
 						style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
 						<path
@@ -103,22 +103,8 @@
 		<!-- NAVBAR -->
 
 		<!-- MAIN -->
-		
-		<main>
-			<div class="head-title">
-				<div class="left">
-					<h1>Bienvenido Admin</h1>
-				</div>
-			</div>
-			<div style="text-align: center; margin-top: 20px">
-				<!-- Aplicando estilos inline para demostración -->
-				<img src="../../assets/images/download-image.png" alt="cardImage" width="750" height="500"
-					style="margin: auto" />
-			</div>
-			
-		</main>
-	<router-view></router-view>
 	</section>
+	<router-view></router-view>
 </template>
 
   

@@ -5,7 +5,7 @@ import agregarMedico from '../pages/master/agregarMedico';
 import gestionCita from '@/pages/master/gestionCita'
 import gestionPaciente from '@/pages/master/gestionPaciente'
 import agregarPaciente from '@/pages/master/agregarPaciente'
-import homeMedico from '@/pages/medico/homeMedico'
+import homePage from '@/pages/master/homePage'
 
 const routes = [
   {
@@ -39,13 +39,15 @@ const routes = [
         component: agregarPaciente
       },
       {
-        name: 'homeMedico',
-        path: 'homeMedico',
-        component: homeMedico
+        name: 'homePage',
+        path: '/',
+        component: homePage
       }
     ]
   }
 ];
+
+
 
 function createAppRouter() {
   const router = createRouter({
