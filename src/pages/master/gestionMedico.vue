@@ -1,25 +1,5 @@
 <template>
     <section id="content">
-      <nav>
-        <i class="bx bx-menu"></i>
-        <form action="#">
-          <div class="form-input">
-            <input type="search" placeholder="Search..." />
-            <button type="submit" class="search-btn">
-              <i class="bx bx-search"></i>
-            </button>
-          </div>
-        </form>
-        <input type="checkbox" id="switch-mode" hidden />
-        <label for="switch-mode" class="switch-mode"></label>
-        <a href="#" class="notification">
-          <i class="bx bxs-bell"></i>
-          <span class="num">8</span>
-        </a>
-        <a href="#" class="profile">
-          <img src="../../assets/images/adm.png" />
-        </a>
-      </nav>
       <main>
         <div class="head-title">
           <div class="left">
@@ -28,7 +8,9 @@
               <li>
 					<router-link to="/dashboardAdmin" class="active">Home</router-link>
               </li>
-              <li><i class="bx bx-chevron-right"></i></li>
+              <li><i class="bx bx-chevron-right"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+					<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+				</svg></i></li>
               <li>
 				<router-link to="/gestionMedico" class="active">Medicos</router-link>
               </li>

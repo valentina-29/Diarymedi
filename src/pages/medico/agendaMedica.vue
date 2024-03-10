@@ -5,7 +5,7 @@
           <span class="text">Diarimedy</span>
         </a>
         <ul class="side-menu top">
-          <li class="active">
+          <li>
             <router-link to="/" class="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" 
 					width="16" 
@@ -19,7 +19,7 @@
 					<span style="margin-left: 8px;">Dashboard</span>
 				</router-link>
           </li>
-          <li>
+          <li class="active">
             <router-link to="/agendaMedica" class="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" 
 					height="16" 
@@ -49,14 +49,13 @@
           </li>
           <li>
             <router-link to="/recetasMedicas" class="flex items-center">
-				<svg xmlns="http://www.w3.org/2000/svg"
-				height="16" 
-				width="20" 
-				viewBox="0 0 384 512"
-				class="mr-2"
-				style="margin-left: 8px;">
-				<path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/>
-				</svg>
+				<svg xmlns="http://www.w3.org/2000/svg" 
+                height="16" 
+                width="20"
+                style="margin-left: 8px;" 
+                viewBox="0 0 384 512">
+                <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/>
+                </svg>
 					<span style="margin-left: 8px;">Precripciones</span>
 				</router-link>
           </li>
@@ -93,146 +92,110 @@
           </li>
         </ul>
       </section>
+
+
+
+	<!-- CONTENT -->
 	<section id="content">
 		<main>
-			<div class="head-titleHome">
-    <div class="leftHome">
-        <h1>Bienvenido Dr. Juan Sierra</h1>
-        <p>Especilaista en medicina general</p>
-    </div>
-</div>
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>Citas</h3>
-						<p>25</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-time' ></i>
-					<span class="text">
-						<h3>Citas pendientes</h3>
-						<p>18</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-calendar' >
-						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" class="mr-2">
-						<path
-							d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
-					</svg>
-					</i>
-					<span class="text">
-						<h3>Martes</h3>
-						<p>19/12/2023</p>
-					</span>
-				</li>
-			</ul>
-			<div class="table-data">
-                    <div id="chartContainer">
-				
-  <Bar id="comparativoChart" :options="chartOptions" :data="chartData"/>
-						
-
-                    </div>
-				<div class="todo">
-					<div class="head">
-						<h3>Pacientes</h3>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<ul class="todo-list">
-						<li class="completed">
-							<p>Julio Mendoza 7:00 am</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
+			<div class="head-title">
+				<div class="left">
+					<h1>Agenda</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
 						</li>
-						<li class="completed">
-							<p>Marcela Angarita 8:30 am</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Sergio Pacheco 10:45 am</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Francisco Fernadez 11:45 pm</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
+                        <li><i class="bx bx-chevron-right">
+				<svg xmlns="http://www.w3.org/2000/svg" 
+                height="10" 
+                width="10" 
+                viewBox="0 0 320 512">
+					<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+				</svg></i>
+			</li>
+						<li>
+							<a class="active" href="#">Agenda</a>
 						</li>
 					</ul>
 				</div>
 			</div>
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Pacientes</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Nombre completo</th>
+								<th>Fecha</th>
+                                <th>Hora</th>
+								<th>Estado</th>
+                                <th>Opcion</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+                                <td>04:15 pm</td>
+								<td><span class="status completed">Completed</span></td>
+                                <td><input type="button" id="edit">editar</td>
+                                <td><input type="button"><i class='bx bxs-x-square'></i></td>
+                                
+							</tr>
+							<tr>
+                                <td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+                                <td>04:15 pm</td>
+								<td><span class="status pending">Pending</span></td>
+                                <td><input type="button"><i class='bx bxs-check-square' ></i></td>
+                                <td><input type="button"><i class='bx bxs-x-square'></i></td>
+							</tr>
+							<tr>
+                                <td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+                                <td>04:15 pm</td>
+								<td><span class="status process">Cancelada</span></td>
+                                <td><input type="button"><i class='bx bxs-check-square' ></i></td>
+                                <td><input type="button"><i class='bx bxs-x-square'></i></td>
+							</tr>
+							<tr>
+                                <td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+                                <td>04:15 pm</td>
+								<td><span class="status pending">Pending</span></td>
+                                <td><input type="button"><i class='bx bxs-check-square' ></i></td>
+                                <td><input type="button"><i class='bx bxs-x-square'></i></td>
+							</tr>
+							<tr>
+                                <td>
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+                                <td>04:15 pm</td>
+								<td><span class="status completed">Completed</span></td>
+                                <td><input type="button"><i class='bx bxs-check-square' ></i></td>
+                                <td><input type="button"><i class='bx bxs-x-square'></i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</main>
+		<!-- MAIN -->
 	</section>
 </template>
-
-<script>
-import { Bar } from 'vue-chartjs';
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
-
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
-
-export default {
-  name: 'BarChart',
-  components: { Bar },
-  data() {
-    return {
-      chartData: {
-        labels: ['January', 'February', 'March'],
-        datasets: [
-          {
-            label: 'Citas canceladas',
-            backgroundColor: '#ef280f',
-            data: [40, 20, 12],
-          },
-          {
-            label: 'Citas atendidas',
-            backgroundColor: '#6dc36d',
-            data: [25, 35, 40],
-          },
-          {
-            label: 'Total de citas',
-            backgroundColor: '#3e95cd',
-            data: [65, 55, 52],
-          },
-        ],
-      },
-      chartOptions: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: 'Gráfico de citas por mes', // Cambia este texto por el título que desees
-            font: {
-              size: 18,
-              weight: 'bold',
-            },
-          },
-        },
-        scales: {
-          x: {
-            display: true,
-            title: {
-              display: true,
-              text: 'Meses',
-            },
-          },
-          y: {
-            display: true,
-            title: {
-              display: true,
-              text: 'Citas',
-            },
-          },
-        },
-      },
-    };
-  },
-};
-</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
@@ -256,7 +219,7 @@ li {
 	--lato: 'Lato', sans-serif;
 
 	--light: #F9F9F9;
-	--lightCard: rgb(207,238,245);
+    --lightCard: rgb(207,238,245);
 	--blue: #3C91E6;
 	--light-blue: #CFE8FF;
 	--grey: rgb(130, 209, 230);
@@ -303,7 +266,6 @@ body {
 	overflow-x: hidden;
 	scrollbar-width: none;
 }
-
 #sidebar img{
 	width: 30px;
 	height: 30px;
@@ -454,7 +416,13 @@ body {
 	cursor: pointer;
 	color: var(--dark);
 }
-
+#content nav .nav-link {
+	font-size: 16px;
+	transition: .3s ease;
+}
+#content nav .nav-link:hover {
+	color: var(--blue);
+}
 #content nav form {
 	max-width: 400px;
 	width: 100%;
@@ -539,7 +507,13 @@ body {
 #content nav #switch-mode:checked + .switch-mode::before {
 	left: calc(100% - (25px - 4px) - 2px);
 }
+/* NAVBAR */
 
+
+
+
+
+/* MAIN */
 #content main {
 	width: 100%;
 	padding: 36px 24px;
@@ -547,6 +521,50 @@ body {
 	max-height: calc(100vh - 56px);
 	overflow-y: auto;
 }
+#content main .head-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+}
+#content main .head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: var(--dark);
+}
+#content main .head-title .left .breadcrumb {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+}
+#content main .head-title .left .breadcrumb li {
+	color: var(--dark);
+}
+#content main .head-title .left .breadcrumb li a {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+#content main .head-title .left .breadcrumb li a.active {
+	color: var(--blue);
+	pointer-events: unset;
+}
+#content main .head-title .btn-download {
+	height: 36px;
+	padding: 0 16px;
+	border-radius: 36px;
+	background: var(--blue);
+	color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	font-weight: 500;
+}
+
+
+
 
 #content main .box-info {
 	display: grid;
@@ -556,7 +574,7 @@ body {
 }
 #content main .box-info li {
 	padding: 24px;
-	background: var(--lightCard);
+	background: var(--light);
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -572,7 +590,7 @@ body {
 	align-items: center;
 }
 #content main .box-info li:nth-child(1) .bx {
-	background: rgb(153, 217,234);
+	background: var(--light-blue);
 	color: var(--blue);
 }
 #content main .box-info li:nth-child(2) .bx {
@@ -606,7 +624,7 @@ body {
 }
 #content main .table-data > div {
 	border-radius: 20px;
-	background: var(--light);
+	background: var(--lightCard);
 	padding: 24px;
 	overflow-x: auto;
 }
@@ -625,10 +643,59 @@ body {
 	cursor: pointer;
 }
 
+#content main .table-data .order {
+	flex-grow: 1;
+	flex-basis: 500px;
+}
+#content main .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+}
+#content main .table-data .order table th {
+	padding-bottom: 12px;
+	font-size: 13px;
+	text-align: left;
+	border-bottom: 1px solid var(--grey);
+}
+#content main .table-data .order table td {
+	padding: 16px 0;
+}
+#content main .table-data .order table tr td:first-child {
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+	padding-left: 6px;
+}
+#content main .table-data .order table td img {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+#content main .table-data .order table tbody tr:hover {
+	background: var(--grey);
+}
+#content main .table-data .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 16px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 700;
+}
+#content main .table-data .order table tr td .status.completed {
+	background: var(--blue);
+}
+#content main .table-data .order table tr td .status.process {
+	background: var(--yellow);
+}
+#content main .table-data .order table tr td .status.pending {
+	background: var(--orange);
+}
+
+
 #content main .table-data .todo {
 	flex-grow: 1;
 	flex-basis: 300px;
-	background: var(--lightCard);
 }
 #content main .table-data .todo .todo-list {
 	width: 100%;
@@ -659,23 +726,71 @@ body {
 /* CONTENT */
 
 
-
-
-
-body #content #chartContainer {
-    width: 600px;
-    margin: 20px auto;
-    background-color: var(--lightCard);
-    padding: 20px; 
-    border-radius: 10px; 
-	flex-grow: 1;
-flex-basis: 500px;
-width: 100%;
-border-collapse: collapse;
+.contenedorSubirArchivo{
+    padding: 5px;
+    
+}
+.subirArchivo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  
+}
+.subirArchivo span{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+.subirArchivo .inputBox{
+    position: relative;
+}
+.subirArchivo .inputBox input{
+    width: 100%;
+    background: var(--grey);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+}
+.subirArchivo .inputBox input:focus{
+    border: 2px solid black;
+    outline: none;
+}
+.subirArchivo .botonSubir{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    grid-column: span 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subirArchivo .botonSubir input{
+    padding: 0 20px 0 20px;
+    line-height: 45px;
+    background: var(--grey);
+    color: var(--white);
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.subirArchivo .botonSubir input:hover{
+    background: var(--lightCard);
+    
+}
+.contenedorSubirArchivo .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
 }
 
 
-/*------------RESPONSIVE---------------------*/
+
+/*RESPONSIVE*/
+
 
 @media screen and (max-width: 768px) {
 	#sidebar {

@@ -1,10 +1,5 @@
 <template>
 		<main>
-			<div class="head-title">
-				<div class="left">
-					<h1>Bienvenido Admin</h1>
-				</div>
-			</div>
 			<div class="table-data">
 			<div class="contenedorFormularioRegistrarPacientes">   
 				<form action="" class="formulario" id="formulario">
@@ -47,7 +42,6 @@
 									<option value="otroGenero">Subsidiado</option>
 								</select>
 							</div>
-							<!--**************BOTÓN FORMULARIO**************-->
 							<div class="botonPacientes">
 								<input type="submit" value="Registrar Pacientes" onclick="validarFormularios()">
 							</div>
@@ -56,7 +50,6 @@
 				</div>
 			</div>
 		</main>
-		<!-- MAIN -->
 </template>
 
 <script>

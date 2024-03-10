@@ -536,92 +536,22 @@ body {
 
 
 <template>
-	<body>
-    <section id="sidebar">
-      <a href="#" class="brand">
-        <i class="bx bxs-smile"></i>
-        <span class="text">AdminHub</span>
-      </a>
-      <ul class="side-menu top">
-        <li>
-          <a href="../index.html">
-            <i class="bx bxs-dashboard"></i>
-            <span class="text">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-user-pin"></i>
-            <span class="text">Usuarios</span>
-          </a>
-        </li>
-        <li>
-          <a href="gestionPacientes.html">
-            <i class="bx bxs-group"></i>
-            <span class="text">Pacientes</span>
-          </a>
-        </li>
-        <li>
-          <a href="gestionMedicos.html">
-            <i class="bx bxs-first-aid"></i>
-            <span class="text">Medicos</span>
-          </a>
-        </li>
-        <li class="active">
-          <a href="gestionCitas.html">
-            <i class="bx bxs-calendar-event"></i>
-            <span class="text">Citas</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="side-menu">
-        <li>
-          <a href="#">
-            <i class="bx bxs-cog"></i>
-            <span class="text">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="logout">
-            <i class="bx bxs-log-out-circle"></i>
-            <span class="text">Logout</span>
-          </a>
-        </li>
-      </ul>
-    </section>
     <section id="content">
-      <nav>
-        <i class="bx bx-menu"></i>
-        <a href="#" class="nav-link">Categories</a>
-        <form action="#">
-          <div class="form-input">
-            <input type="search" placeholder="Search..." />
-            <button type="submit" class="search-btn">
-              <i class="bx bx-search"></i>
-            </button>
-          </div>
-        </form>
-        <input type="checkbox" id="switch-mode" hidden />
-        <label for="switch-mode" class="switch-mode"></label>
-        <a href="#" class="notification">
-          <i class="bx bxs-bell"></i>
-          <span class="num">8</span>
-        </a>
-        <a href="#" class="profile">
-          <img src="img/people.png" />
-        </a>
-      </nav>
       <main>
         <div class="head-title">
           <div class="left">
             <h1>Calendario de citas</h1>
             <ul class="breadcrumb">
               <li>
-                <a href="../index.html">Dashboard</a>
+                <router-link to="/">Dashboard</router-link>
               </li>
-              <li><i class="bx bx-chevron-right"></i></li>
+              <li><i class="bx bx-chevron-right">
+				<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+					<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+				</svg></i>
+			</li>
               <li>
-                <a class="active" href="gestionCitas">Citas</a>
+				<router-link to="/gestionCita" class="active">Citas</router-link>
               </li>
             </ul>
           </div>
@@ -670,7 +600,6 @@ body {
       </main>
     
     </section>
-  </body>
   </template>
 
 

@@ -1,5 +1,6 @@
-<!-- SIDEBAR -->
-<section id="sidebar">
+<template>
+    <div>
+        <section id="sidebar">
     <a href="#" class="brand">
         <img src="../../assets/images/a1.png" alt="">
         <span class="text">AdminHub</span>
@@ -51,5 +52,7 @@
             </a>
         </li>
     </ul>
-</section>
-<!-- SIDEBAR -->
+</section> 
+    </div>
+</template>
+

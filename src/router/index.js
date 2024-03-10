@@ -6,6 +6,10 @@ import gestionCita from '@/pages/master/gestionCita'
 import gestionPaciente from '@/pages/master/gestionPaciente'
 import agregarPaciente from '@/pages/master/agregarPaciente'
 import homePage from '@/pages/master/homePage'
+import homeMedico from '@/pages/medico/homeMedico'
+import loginPrincipal from '@/pages/loginPrincipal'
+import agendaMedica from '@/pages/medico/agendaMedica'
+import homePageMedico from '@/pages/medico/homePageMedico'
 
 const routes = [
   {
@@ -42,6 +46,25 @@ const routes = [
         name: 'homePage',
         path: '/',
         component: homePage
+      },
+      {
+        name: 'homeMedico',
+        path: 'homeMedico',
+        component: homeMedico
+      },
+      {
+        name: 'loginPrincipal',
+        path: 'loginPrincipal',
+        component: loginPrincipal
+      },
+      {
+        name: 'agendaMedica',
+        path: 'agendaMedica',
+        component: agendaMedica
+      },{
+        name: 'homePageMedico',
+        path: 'homeMedico',
+        component: homePageMedico
       }
     ]
   }

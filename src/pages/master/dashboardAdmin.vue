@@ -81,12 +81,22 @@
 	<section id="content">
 		<!-- NAVBAR -->
 		<nav>
-			<i class="bx bx-menu"></i>
+			<i class="bx bx-menu"><svg xmlns="http://www.w3.org/2000/svg" 
+				height="16" 
+				width="14" 
+				viewBox="0 0 448 512">
+    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+    </svg></i>
 			<form action="#">
 				<div class="form-input">
 					<input type="search" placeholder="Search..." />
 					<button type="submit" class="search-btn">
-						<i class="bx bx-search"></i>
+						<i class="bx bx-search"><svg xmlns="http://www.w3.org/2000/svg"
+							height="16" 
+							width="16" 
+							viewBox="0 0 512 512">
+							<path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+						</svg></i>
 					</button>
 				</div>
 			</form>
@@ -100,9 +110,6 @@
 				<img src="../../assets/images/adm.png" />
 			</a>
 		</nav>
-		<!-- NAVBAR -->
-
-		<!-- MAIN -->
 	</section>
 	<router-view></router-view>
 </template>
@@ -188,9 +195,10 @@ li {
 	--lato: 'Lato', sans-serif;
 
 	--light: #F9F9F9;
+	--lightCard: rgb(207,238,245);
 	--blue: #3C91E6;
 	--light-blue: #CFE8FF;
-	--grey: #eee;
+	--grey: rgb(130, 209, 230);
 	--dark-grey: #AAAAAA;
 	--dark: #342E37;
 	--red: #DB504A;
@@ -205,8 +213,9 @@ html {
 }
 
 body.dark {
-	--light: #0C0C1E;
-	--grey: #060714;
+	--light: #000000;
+	--lightCard: #000000;
+	--grey: rgb(46,46,46);
 	--dark: #FBFBFB;
 }
 

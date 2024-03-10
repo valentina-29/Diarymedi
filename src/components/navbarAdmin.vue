@@ -1,5 +1,6 @@
-<!-- NAVBAR -->
-<nav>
+<template>
+    <div>
+        <nav>
     <i class='bx bx-menu' ></i>
     <form action="#">
         <div class="form-input">
@@ -17,4 +18,5 @@
         <img src="../../assets/images/adm.png">
     </a>
 </nav>
-<!-- NAVBAR -->
+    </div>
+</template>

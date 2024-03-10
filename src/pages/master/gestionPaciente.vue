@@ -1,19 +1,17 @@
 <template>
-    <!-- CONTENT -->
     <section id="content">
-
-
-      <!-- MAIN -->
       <main>
         <div class="head-title">
           <div class="left">
             <h1>Pacientes</h1>
             <ul class="breadcrumb">
               <li>
-                <a class="active" href="../index.html">Home
+                <a class="active" href="/">Home
                 </a>
               </li>
-              <li><i class="bx bx-chevron-right"></i></li>
+              <li><i class="bx bx-chevron-right"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512">
+					<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+				</svg></i></li>
               <li>
                 <a class="active" href="gestionPacientes.html">Pacientes</a>
               </li>
